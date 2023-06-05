@@ -119,7 +119,6 @@ body::after {
     position: relative; 
     height: 100%;
     bottom: 0;
-    padding: 2rem 0;
 }
 .hero-title {
     width: 30%;
@@ -161,14 +160,14 @@ body::after {
 }
 .hi-1 {
     margin-right: 2%;
-    background: url('https://i.pinimg.com/originals/a0/5f/a7/a05fa7c865b7d63900da247df65c908f.jpg');
+    background: url('src/img/taj-mahal.jpg');
     width: 50%;
 }
 .hi-2 {
-    background: url('https://i.pinimg.com/originals/ff/6c/27/ff6c27125f66e26534d81eb38157492d.jpg');
+    background: url('src/img/gate-of-heaven.jpg');
 }
 .hi-3 {
-    background: url('https://i.pinimg.com/originals/f9/0e/23/f90e23490bb4e8448a7d823753a1e41c.jpg');
+    background: url('src/img/paris.jpg');
 }
 .hi-1, .hi-2, .hi-3 {
     background-position: center;
@@ -374,16 +373,16 @@ Location-section
 }
 
 #one {
-   @include background('https://i.pinimg.com/originals/14/db/9c/14db9c4bd15be6132ee52e3536d902b3.jpg');
+   @include background('src/img/india.jpg');
 }
 #two {
-    @include background('https://i.pinimg.com/originals/48/ac/0d/48ac0db319b4e8f5f1483f11c355bf55.jpg');
+    @include background('src/img/america.jpg');
 }
 #three {
-    @include background('https://i.pinimg.com/originals/fb/c6/6c/fbc66ccfcc348f6a843e7b70394c8703.jpg');   
+    @include background('src/img/eu.jpg');   
 }
 #four {
-    @include background('https://i.pinimg.com/originals/13/4d/7e/134d7e8ff727112213840c208612d9ce.jpg');
+    @include background('src/img/japan.png');
 }
 /*
 ==============================
@@ -470,11 +469,10 @@ Services section
         .services-video {
             position: relative;
             width: 65%;
-            iframe {
+            .video {
                 position: relative;
                 width: 100%;
                 border-radius: 20px;
-                min-height: 400px;
                 cursor: pointer;
                 box-shadow: 0 0 49px 0 rgba(0,0,0,0.75) inset;
                 transition: 0.25s box-shadow ease-in;
